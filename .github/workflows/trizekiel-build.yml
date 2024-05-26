@@ -2,6 +2,12 @@ name: Palworld ACR Workflow
 
 on: [push]
 
+workflow_dispatch:
+  inputs:
+    tag:
+      description: 'Palworld ACR tag'
+      required: true
+      default: 'latest'
 jobs:
   build:
 
